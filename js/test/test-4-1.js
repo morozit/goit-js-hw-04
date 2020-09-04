@@ -17,18 +17,14 @@ const add = function (x, y) {
 // TODO-2: додали add до аргумента
 doMath(10, 5, add);
 
-// ! Друга функція
-const sub = function (x, y) {
-  return x - y;
-};
+// // ! Друга функція
+// const sub = function (x, y) {
+//   return x - y;
+// };
 
-doMath(2, 3, sub);
+// doMath(2, 3, sub);
 // ! Друга функція - інший запис
 
-doMath(
-  2,
-  3,
-  (sub = function (x, y) {
-    return x - y;
-  })
-);
+doMath(25, 20, function (x, y) {
+  return x - y;
+});
