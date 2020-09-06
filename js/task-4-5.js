@@ -1,12 +1,11 @@
-/*
 const inventory = {
-  items: ['Knife', 'Gas mask'],
+  items: ["Knife", "Gas mask"],
   add(itemName) {
     this.items.push(itemName);
     return `Adding ${itemName} to inventory`;
   },
   remove(itemName) {
-    this.items = this.items.filter(item => item !== itemName);
+    this.items = this.items.filter((item) => item !== itemName);
     return `Removing ${itemName} from inventory`;
   },
 };
@@ -18,8 +17,9 @@ const invokeInventoryAction = function (itemName, action) {
 };
 
 const invokeAdd = invokeInventoryAction(
-  'Medkit',
-  inventory.add.bind(inventory), // Write code in this line
+  "Medkit",
+  // TODO: add bind(inventory)
+  inventory.add.bind(inventory) // Write code in this line
 );
 const arrayAdd = [...inventory.items];
 
@@ -30,8 +30,9 @@ console.log(arrayAdd);
 // ['Knife', 'Gas mask', 'Medkit']
 
 const invokeRemove = invokeInventoryAction(
-  'Gas mask',
-  inventory.remove.bind(inventory), // Write code in this line
+  "Gas mask",
+  // TODO: add bind(inventory)
+  inventory.remove.bind(inventory) // Write code in this line
 );
 
 const arrayRemove = [...inventory.items];
@@ -41,4 +42,3 @@ console.log(invokeRemove);
 
 console.log(arrayRemove);
 // ['Knife', 'Medkit']
-*/
